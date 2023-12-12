@@ -1,0 +1,21 @@
+variables:
+  ARTIFACT_VERSION: "0.1.$CI_PIPELINE_IID"
+  DOTNET_PUBLISH_FILE_PATH: "backend.csproj"
+  REPLACE_COMMA_SEPARATED_FILE_PATTERNS: 'appsettings.json'
+  AZURE_DEPLOYMENT_APP_SETTINGS: PRODUCTION=TRUE
+  DOTNET_PIPELINE_IMAGE_VERSION: "7.0"
+
+include:
+  - project: "kamstrup/pipelinetemplates/dotnet/executable"
+    ref: "v0.9.0"
+    file: "pipeline.yml"
+  - project: "kamstrup/PipelineTemplates/continous-deployment/az-web-app"
+    ref: "v3.3.0"
+    file: "deployments/3-env.yml"
+  - project: kamstrup/pipelinetemplates/tagging
+    ref: "v1.3.0"
+    file: abstractions/.versioning.yml 
+
+dotnet tests:
+  rules:
+    - when: never
