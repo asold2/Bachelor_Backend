@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Models.UtilityCalculationRow;
 
-// [Authorize]
 [Route("api/")]
 
 public class UtilityController : Controller

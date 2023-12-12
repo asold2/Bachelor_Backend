@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7l29g3dSbn0bN8tTtiTcuGYpQB8wTE5miyYiB0dvdP3khni5xZ8UfP7JyhPlhYodrP+9yWL+QUhi5Bjg3n0v3w==",
+  "dgSpecHash": "nTZ3OCEskOwhqDh9wuMCNhyyjtuLV4mZSpxEZ6afiCpOkRAjM59xfHT4ndF7DzryF5+LE9BUcgwhAlso8FYQ+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adsn\\HeatLandingPage\\backend_solution\\backend_test\\backend_test.csproj",
+  "projectFilePath": "C:\\Users\\adsn\\BPRDocuments\\Bachelor-Backend\\backend_solution\\backend_test\\backend_test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adsn\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\adsn\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

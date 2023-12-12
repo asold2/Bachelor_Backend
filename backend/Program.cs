@@ -45,13 +45,6 @@ builder.Services.AddCors(options =>
     });
 });
 
-// adds the security configuration
-// that allows only Kamstrup employes to access the app.
-
-// var kamstrupSecurityOptions = new KamstrupSecurityOptions();
-// builder.Configuration.GetSection(KamstrupSecurityOptions.OptionsSection).Bind(kamstrupSecurityOptions);
-// builder.Services.ConfigureAuthenticationService(kamstrupSecurityOptions);
-
 var app = builder.Build();
 
 

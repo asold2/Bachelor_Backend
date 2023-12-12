@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 
-// [Authorize]
 [Route("api/")]
 public class JobsController : Controller
 {

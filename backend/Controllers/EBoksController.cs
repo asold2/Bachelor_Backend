@@ -1,7 +1,6 @@
 namespace backend.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
-// [Authorize]
 [Route("api/")]
 
 public class EboksController : Controller
