@@ -1,8 +1,5 @@
-
-
 using backend.Services.SignalR;
 using Microsoft.Extensions.Logging;
-
 namespace backend_test.AzureHubTest;
 
 [TestClass]

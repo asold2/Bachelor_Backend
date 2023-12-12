@@ -1,10 +1,13 @@
 namespace backend.Controllers;
+
+using Kamstrup.Analytics.Security.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-// [Authorize]
+[Authorize]
 [Route("api/")]
 
-public class EboksController : Controller
+public class EboksController : BaseController
 {
 
     private readonly IFacade _facade;

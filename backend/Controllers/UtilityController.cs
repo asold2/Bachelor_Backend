@@ -1,10 +1,12 @@
+using Kamstrup.Analytics.Security.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models.UtilityCalculationRow;
 
-// [Authorize]
+[Authorize]
 [Route("api/")]
 
-public class UtilityController : Controller
+public class UtilityController : BaseController
 {
 
     private readonly IFacade _facade;

@@ -1,4 +1,6 @@
 using backend.Services.SignalR;
+using Kamstrup.Analytics.Security.Middleware;
+using Kamstrup.Analytics.Security.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,9 +50,9 @@ builder.Services.AddCors(options =>
 // adds the security configuration
 // that allows only Kamstrup employes to access the app.
 
-// var kamstrupSecurityOptions = new KamstrupSecurityOptions();
-// builder.Configuration.GetSection(KamstrupSecurityOptions.OptionsSection).Bind(kamstrupSecurityOptions);
-// builder.Services.ConfigureAuthenticationService(kamstrupSecurityOptions);
+var kamstrupSecurityOptions = new KamstrupSecurityOptions();
+builder.Configuration.GetSection(KamstrupSecurityOptions.OptionsSection).Bind(kamstrupSecurityOptions);
+builder.Services.ConfigureAuthenticationService(kamstrupSecurityOptions);
 
 var app = builder.Build();
 

@@ -1,8 +1,10 @@
+using Kamstrup.Analytics.Security.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-// [Authorize]
+[Authorize]
 [Route("api/")]
-public class JobsController : Controller
+public class JobsController : BaseController
 {
 
     private readonly IFacade _facade;

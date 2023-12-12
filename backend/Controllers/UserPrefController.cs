@@ -1,7 +1,9 @@
+using Kamstrup.Analytics.Security.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-// [Authorize]
-public class UserPrefController : Controller
+[Authorize]
+public class UserPrefController : BaseController
 {
 
     private readonly IUserPrefService _userPrefService;
